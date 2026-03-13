@@ -78,7 +78,7 @@ jobs:
           tar -czf "${PKG_NAME}.tgz" "${PKG_NAME}"
 
       - name: Upload artifact
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         with:
           name: vibe-style-${{ matrix.target.name }}
           path: vibe-style-${{ matrix.target.name }}-v*.*
